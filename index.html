@@ -4,67 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Hub</title>
+    <title>Portfólio • Atividades Faculdade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <ul class="menu" id="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="Eu.html">Quem sou eu?</a></li>
-            <li>
-                <a href="#">Aulas</a>
-                <ul class="submenu">
-                    <li><a href="apresentacao.html">-> Apresentação</a></li>
-                    <li><a href="listas.html">-> Listas, tabelas e formulários</a></li>
-                    <li><a href="menu.html">-> Menu, Classes, Imagens e vídeos</a></li>
-                    <li><a href="cards.html">-> Cards, Player de áudio e plano de fundo</a></li>
-                    <li><a href="login.html">-> Botões, Alertas e Tela de Login</a></li>
-                    <li><a href="e-comerce.html">-> Landing E-Commerce</a></li>
-                    <li><a href="bootstrap.html">->Bootstrap</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Relatorios</a>
-                    <ul class="submenu">
-                        <li><a href="pdfs/relatorio1.pdf" target="_blank">-> Listas, tabelas e formulários</a></li>
-                        <li><a href="pdfs/relatorio2.pdf" target="_blank">-> Menu, Classes, Imagens e vídeos</a></li>
-                        <li><a href="pdfs/relatorio3.pdf" target="_blank">-> Cards, Player de áudio e plano de fundo</a></li>
-                        <li><a href="pdfs/relatorio4.pdf" target="_blank">-> Botões, Alertas e Tela de Login</a></li>
-                        <li><a href="pdfs/relatorio5.pdf" target="_blank">-> Landing E-Commerce</a></li>
-                        <li><a href="pdfs/relatorio6.pdf" target="_blank">-> Bootstrap</a></li>
+    <!-- Fundo gradiente azul → roxo (mantido) -->
+    <div class="gradient-aurora"></div>
+
+    <!-- Ícones flutuantes -->
+    <div class="float-icon"><i class="fas fa-atom"></i></div>
+    <div class="float-icon second"><i class="fas fa-microchip"></i></div>
+    <div class="float-icon third"><i class="fas fa-cube"></i></div>
+    <div class="float-icon fourth"><i class="fas fa-brain"></i></div>
+    <div class="float-icon fifth"><i class="fas fa-chart-line"></i></div>
+    <div class="float-icon sixth"><i class="fas fa-shapes"></i></div>
+    <div class="float-icon spider-icon"><i class="fas fa-spider"></i></div>
+    <div class="float-icon lightning-icon"><i class="fas fa-bolt"></i></div>
+
+    <!-- Menu no estilo "liquid glass" Apple -->
+    <nav class="apple-glass">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>🕷️ JV Tech</span>
+            </div>
+            <ul class="menu-apple">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="Eu.html">Quem sou eu</a></li>
+                <li class="dropdown-apple">
+                    <a href="#">Aulas <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu-apple">
+                        <li><a href="apresentacao.html">Apresentação</a></li>
+                        <li><a href="listas.html">Listas, tabelas e forms</a></li>
+                        <li><a href="menu.html">Menu, classes e mídia</a></li>
+                        <li><a href="cards.html">Cards, áudio e fundo</a></li>
+                        <li><a href="login.html">Botões, alertas e login</a></li>
+                        <li><a href="e-comerce.html">Landing e-commerce</a></li>
+                        <li><a href="bootstrap.html">Bootstrap</a></li>
                     </ul>
                 </li>
-
-            <li><a href="Contato.html">Contatos</a></li>
-        </ul>
+                <li class="dropdown-apple">
+                    <a href="#">Relatórios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu-apple">
+                        <li><a href="pdfs/relatorio1.pdf" target="_blank">Listas, tabelas e forms</a></li>
+                        <li><a href="pdfs/relatorio2.pdf" target="_blank">Menu, classes e mídia</a></li>
+                        <li><a href="pdfs/relatorio3.pdf" target="_blank">Cards, áudio e fundo</a></li>
+                        <li><a href="pdfs/relatorio4.pdf" target="_blank">Botões, alertas e login</a></li>
+                        <li><a href="pdfs/relatorio5.pdf" target="_blank">Landing e-commerce</a></li>
+                        <li><a href="pdfs/relatorio6.pdf" target="_blank">Bootstrap</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="container">
-        <header>
-            <h1>Portfólio de Desenvolvimento Web</h1>
-        </header>
+    <div class="layout">
+        <!-- Sidebar Esquerda: Aulas -->
+        <aside class="sidebar sidebar-left">
+            <div class="sidebar-header">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Atividades</h3>
+                <p>Projetos da disciplina</p>
+            </div>
+            <div class="project-list">
+                <a href="apresentacao.html" class="project-card">
+                    <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <div class="card-info"><strong>Apresentação</strong><span>html + css</span></div>
+                </a>
+                <a href="listas.html" class="project-card">
+                    <div class="card-icon"><i class="fas fa-table-list"></i></div>
+                    <div class="card-info"><strong>Listas, tabelas e forms</strong><span>estruturas</span></div>
+                </a>
+                <a href="menu.html" class="project-card">
+                    <div class="card-icon"><i class="fas fa-image"></i></div>
+                    <div class="card-info"><strong>Menu, classes e mídia</strong><span>flexbox / grid</span></div>
+                </a>
+                <a href="cards.html" class="project-card">
+                    <div class="card-icon"><i class="fas fa-music"></i></div>
+                    <div class="card-info"><strong>Cards, áudio e fundo</strong><span>glassmorphism</span></div>
+                </a>
+                <a href="login.html" class="project-card">
+                    <div class="card-icon"><i class="fas fa-right-to-bracket"></i></div>
+                    <div class="card-info"><strong>Botões, alertas e login</strong><span>javascript</span></div>
+                </a>
+                <a href="e-comerce.html" class="project-card">
+                    <div class="card-icon"><i class="fas fa-store"></i></div>
+                    <div class="card-info"><strong>Landing e-commerce</strong><span>responsivo</span></div>
+                </a>
+                <a href="bootstrap.html" class="project-card">
+                    <div class="card-icon"><i class="fab fa-bootstrap"></i></div>
+                    <div class="card-info"><strong>Bootstrap 5</strong><span>framework</span></div>
+                </a>
+            </div>
+            <div class="sidebar-footer"><i class="fas fa-plus-circle"></i> Novos projetos em breve</div>
+        </aside>
 
-        <main class="cards-grid">
-            <section class="card">
-                <h3>- Portfólio</h3>
-                <p>Este portfólio foi criado para anexar e documentar todas as atividades realizadas em sala de aula na disciplina de Desenvolvimento Web. O menu acima possui informações e visualização de todos os projetos e relatórios desenvolvidos ao longo do semestre.</p>
-            </section>
+        <!-- Conteúdo Central -->
+        <main class="main-content">
+            <div class="hero-minimal">
+                <span class="tag">Faculdade • Engenharia Da Computação</span>
+                <h1>Portfólio De <span class="gradient">Desenvolvimento Web</span></h1>
+                <p>Registro das Atividades Práticas da Disciplina — Do Básico ao Avançado</p>
+                <div class="stats">
+                    <div><i class="fas fa-code"></i> 7 projetos</div>
+                    <div><i class="fas fa-file-pdf"></i> 6 relatórios</div>
+                    <div><i class="fas fa-calendar-week"></i> 1º semestre/2026</div>
+                </div>
+            </div>
 
-            <section class="card">
-                <h3>- Desenvolvimento</h3>
-                <p>Todos os trabalhos foram desenvolvidos seguindo um tema proposto em sala de aula, com o objetivo de aprendermos conceitos novos e adquirirmos habilidades práticas para o desenvolvimento web. Cada atividade aborda diferentes tecnologias e técnicas, desde HTML semântico até estilização avançada com CSS.</p>
-            </section>
+            <div class="info-cards-mini">
+                <div class="info-mini">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <h4>Evolução Contínua</h4>
+                        <p>Do Html Semântico ao Css Grid + Javascript Interativo</p>
+                    </div>
+                </div>
+                <div class="info-mini">
+                    <i class="fas fa-bullseye"></i>
+                    <div>
+                        <h4>Objetivo Acadêmico</h4>
+                        <p>Consolidar Fundamentos e Criar Portfólio Demonstrativo</p>
+                    </div>
+                </div>
+                <div class="info-mini">
+                    <i class="fas fa-folder-tree"></i>
+                    <div>
+                        <h4>Repositório Vivo</h4>
+                        <p>Todos os Códigos e Relatórios disponíveis nas sidebars</p>
+                    </div>
+                </div>
+            </div>
 
-            <section class="card">
-                <h3>- Objetivo</h3>
-                <p>Consolidar os conhecimentos fundamentais de front-end através da prática constante, criando um repositório visual da evolução técnica. Este projeto também serve como base para futuros trabalhos e como portfólio demonstrativo das competências adquiridas na disciplina.</p>
-            </section>
+            <div class="github-card-mini">
+                <i class="fab fa-github"></i>
+                <div class="github-info">
+                    <h4>Códigos No GitHub</h4>
+                    <p>Repositórios dos Projetos Acadêmicos</p>
+                </div>
+                <a href="https://github.com/FaculdadeJV" target="_blank" class="github-link-mini">
+                    <i class="fab fa-github"></i> Acessar
+                </a>
+            </div>
         </main>
+
+        <!-- Sidebar Direita: Relatórios -->
+        <aside class="sidebar sidebar-right">
+            <div class="sidebar-header">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Relatórios</h3>
+                <p>Documentação em pdf</p>
+            </div>
+            <div class="project-list">
+                <a href="pdfs/relatorio1.pdf" target="_blank" class="project-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-info"><strong>Listas, tabelas e forms</strong><span>pdf</span></div>
+                </a>
+                <a href="pdfs/relatorio2.pdf" target="_blank" class="project-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-info"><strong>Menu, classes e mídia</strong><span>pdf</span></div>
+                </a>
+                <a href="pdfs/relatorio3.pdf" target="_blank" class="project-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-info"><strong>Cards, áudio e fundo</strong><span>pdf</span></div>
+                </a>
+                <a href="pdfs/relatorio4.pdf" target="_blank" class="project-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-info"><strong>Botões, alertas e login</strong><span>pdf</span></div>
+                </a>
+                <a href="pdfs/relatorio5.pdf" target="_blank" class="project-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-info"><strong>Landing e-commerce</strong><span>pdf</span></div>
+                </a>
+                <a href="pdfs/relatorio6.pdf" target="_blank" class="project-card">
+                    <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="card-info"><strong>Bootstrap</strong><span>pdf</span></div>
+                </a>
+            </div>
+            <div class="sidebar-footer"><i class="fas fa-download"></i> Clique para visualizar</div>
+        </aside>
     </div>
 
+    <footer>
+        <p>Portfólio Acadêmico • Desenvolvimento Web • <span id="ano"></span></p>
+        <p>Jonathan Arsego Lêla • Engenharia da Computação</p>
+        <div class="footer-icons"><i class="fas fa-spider"></i> <i class="fas fa-bolt"></i> <i
+                class="fas fa-shapes"></i></div>
+    </footer>
+
+    <script>document.getElementById('ano').innerText = new Date().getFullYear();</script>
 </body>
 
 </html>

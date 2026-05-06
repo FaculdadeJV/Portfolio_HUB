@@ -63,7 +63,7 @@ projeto/
 
 O projeto está hospedado no Netlify e pode ser acessado através do link:
 
-🔗 [(https://22408629.netlify.app/)]
+🔗 [(https://22408629.cgid.workers.dev//)]
 
 ## 📄 Relatórios
 
